@@ -7,10 +7,11 @@
     font-weight: 200;
 }
 body{
-    width: 1350px;
+    width: 1349px;
+    font-size: 12px;
 }
 .hdnav{
-    width: 1180px;
+    width: 1179px;
     padding: 0 85px;  
     font-size: 12px;
     /* width: 100%; */
@@ -305,11 +306,6 @@ body{
     justify-content: space-between;
     display: none;   
 }
-/* .hdnav .dhbox .block{
-    flex-grow: 1;
-    padding: 10px;
-    border-right: 1px solid #eee;
-} */
 .hdnav .dhbox .tit{
     font-size: 18px;
     font-weight: 800;
@@ -456,17 +452,17 @@ body{
 .header .hdserch .serch{
     width: 500px;
     height: 36px;
-    border: 2px solid #f40;
+    border: 2px solid #ff6905;
     float: left;
     outline: none;
-    text-indent: 5px;
-    /* color: #9c9c9c; */
+    text-indent: 10px;
+    color: #9c9c9c; 
 }
 .header .hdserch .sub{
     width: 120px;
     height: 40px;
     color: #fff;
-    background: #f40;
+    background: #ff6905;
     border:none;
     float: left;
     outline: none;
@@ -498,10 +494,385 @@ body{
 .header .hdserch .shpnav .last{
     float: right;
 }
-.content .conhead{
+.afthead{
     width: 100%;
+    height: 33px;
 }
-.conhead li{
+.afthead li{
+    height: 33px;
+    line-height: 33px;
     float: left;
     font-size: 16px;
+}
+.afthead .zhuti{
+    width: 190px;
+    margin-left: 100px;
+    background: #ff6905;
+    
+}
+.afthead .zhuti a{
+    color: #fff;
+    margin-left: 10px;
+}
+.afthead .zhuti .wlist{
+    width: 16px;
+    height: 33px;
+    background: url(img/wlist.png) no-repeat;
+    background-size: contain;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.afthead .subnav{
+    margin: 0 5px;
+}
+.afthead .subnav .red{
+    color: #f40;
+}
+.afthead .subnav a{
+    color: #3c3c3c;
+    font-weight: 800;
+    padding: 3px 5px;
+    border-radius: 17px 17px 17px 17px/ 17px 17px 17px 17px;
+}
+.afthead .subnav:hover a{
+    background: #ff6905;
+    color: #fff;
+}
+.content {
+    width: 100%;
+    height: 1000px;
+    background: #f1f1f1;
+}
+.content .listnav {
+    margin-left: 100px;
+    width: 190px;
+    height: auto;
+    float: left;
+}
+.content .listnav li{
+    height: 30px;
+    line-height: 33px;
+    width: 170px;
+    padding: 0 10px;
+    background: #ff6905;
+}
+.content .listnav li .table{
+    width: 710px;
+    height: 518px;
+    border: 1px solid #f40;
+    position: absolute;
+    top: 198px;
+    left: 289px;
+    background: url(img/table.png);
+    z-index: 100;
+    display: none;
+}
+.content .listnav li:hover{
+    background: #f94a14;
+}
+.content .listnav li:hover .table{
+    display: block;
+}
+
+.content .listnav .shirt{
+    background: url(img/shirt.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 0 3px;
+    margin-top: 9px;
+}
+.content .listnav .more{
+    width: 16px;
+    height: 16px;
+    background: url(img/more.png);
+    margin-top: 9px;
+    float: right;
+}
+.content .listnav li a{
+    color: #fff;
+    font-size: 13px;
+}
+.content .listnav li:hover .shirt{
+    background: url(img/wshirt.png) no-repeat;
+} 
+.content .listnav li a:hover{
+    text-decoration: underline;
+}
+.content .listnav li span{
+    color: #fff;
+}
+.content .article{
+    width: 690px;
+    height: 530px;
+    float: left;
+    /* border: 1px solid red; */
+}
+.content .article .art1{
+    float: left;
+    width: 500px;
+    height: 280px;
+    background: url(img/art1.jpg);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.content .article .art2{
+    float: left;
+    width: 160px;
+    height: 280px;
+    background: url(img/art2.png);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.content .article .art3{
+    float: left;
+    padding: 22px 5px ;
+    background: #fff;
+    margin-top: 30px;
+    position: relative;
+}
+ .content .article .art3::before{
+    width: 510px;
+    height: 3px;
+    background: #c12c26;
+    content: "";
+    position: absolute;
+    top: -1px;
+} 
+.content .article .art3-1{
+    float: left;
+    width: 250px;
+    height: 155px;
+    background: url(img/art3-1.jpg);
+    
+
+}
+.content .article .art3-2{
+    float: left;
+    width: 250px;
+    height: 155px;
+    background: url(img/art3-2.jpg);
+    margin-left: 5px;
+}
+.content .article .art4{
+    position: relative;
+    float: left;
+    width: 160px;
+    height: 200px;
+    background: url(img/art4.jpg);
+    margin-left: 10px;
+    margin-top: 30px;
+}
+ .content .article .art4::before{
+    position: absolute;
+    top: -18px;
+    font-size: 12px;
+    content: "今日热卖";
+    color: #a1a1a1;
+ }
+ .content .login{
+     float: left;
+     width: 290px;
+     height: 515px;
+ }
+.content .login li{
+     /* width: 290px;  */
+     text-align: center;
+}
+.content .login .part1{
+    width: 290px;
+    height: 167px; 
+    background: url(img/logbg.png);
+    background-size: cover;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.content .login .part1 a{
+    display: inline-block;
+    color: #f40;
+}
+.login .part1 .tao{
+    background: url(img/hi.jpg);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-size: cover;
+    display:block;
+    margin: auto;
+    margin-top: 20px;
+    /* margin-left:97px ; */
+    border: 3px solid #fff;
+}
+.login .part1 .coin{
+    background: url(img/xuebi.png);
+    display: inline-block;
+    background-position-y: 288px;
+    width: 16px;
+    height: 16px;
+    vertical-align: text-top;
+}
+.login .part1 .ld{
+    margin-top: 10px;
+    display: -webkit-flex;
+    justify-content: space-around; 
+}
+.login .part1 .ld li{
+    padding: 5px 30px;
+    background: #f40;
+    color: #fff;
+    font-weight: 600;
+}
+.login .part2{
+    display: -webkit-flex;
+    justify-content: center;
+    color: #f40;
+    background: #ffe4dd;
+    padding: 10px 0;
+}
+.login .part2 .rig{
+    background: url(img/rig.png);
+    width: 16px;
+    height: 16px;
+    position: relative;
+    left: 20px;
+}
+.login .part3{
+    background: #fff;
+    padding: 8px;
+}
+.login .part3 .head{
+    display: -webkit-flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.login .part3 .head .gg{
+    font-weight: 700;
+    text-decoration: underline;
+}
+.login .part3 li{
+    height: 25px;
+    line-height: 25px;
+}
+.login .part4{
+    height: 400px;
+    
+}
+.login .part4 .tb{
+    display: -webkit-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+}
+.login .part4 li{
+    width: 70px;
+    height: 70px;  
+    border: 1px solid #eaeaea;
+    flex: auto;
+    background: #fff;
+    /* display: -webkit-flex;
+    justify-content: center; */
+}
+.login .part4 .tb div{
+    width: 24px;
+    height: 24px;
+    margin: auto;
+    margin-top: 11px;
+}
+.login .part4 .tb .huafei{
+    background: url(img/xuebi.png);
+
+}
+.login .part4 .tb .youxi{
+    background: url(img/xuebi.png);
+    background-position-y: -43px;
+
+}
+.login .part4 .tb .lvxing{
+    background: url(img/xuebi.png);
+    background-position-y: -87px;
+
+}
+.login .part4 .tb .chexian{
+    background: url(img/xuebi.png);
+    background-position-y: -131px;
+
+}
+.login .part4 .tb .caipiao{
+    background: url(img/xuebi.png);
+    background-position-y: -176px;
+
+}
+.login .part4 .tb .dianying{
+    background: url(img/xuebi.png);
+    background-position-y: -219px;
+
+}
+.login .part4 .tb .jiudian{
+    background: url(img/xuebi.png);
+    background-position-y: -263px;
+
+}
+.login .part4 .tb .licai{
+    background: url(img/xuebi.png);
+    background-position-y: -306px;
+
+}
+.login .part4 .tb .zhaofuwu{
+    background: url(img/xuebi.png);
+    background-position-y: -352px;
+
+}
+.login .part4 .tb .yanchu{
+    background: url(img/xuebi.png);
+    background-position-y: -396px;
+
+}
+.login .part4 .tb .shuimeiqi{
+    background: url(img/xuebi.png);
+    background-position-y: -440px;
+
+}
+.login .part4 .tb .huochepiao{
+    background: url(img/xuebi.png);
+    background-position-y: -484px;
+
+}
+.content .aside{
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+    width: 50px;
+    height: 450px;
+}
+.content .aside li{
+    height: 50px;
+    background: #fff; 
+    font-size: 14px;
+    line-height: 50px;
+    position: relative;
+}
+.content .aside li::after{
+    content: "";
+    border-bottom: 1px solid #efefef;
+    width: 34px;
+    position: absolute;
+    left: 8px;
+    top: -1px;
+}
+.content .aside .first{
+    background: url(img/xuebi.png);
+    background-position-y: 83px;
+}
+.content .aside .first p{
+    color: #fff;
+}
+.content .aside li p{
+    margin-left: 9px;
+    margin-right: 8px;
+}
+.content .aside li p a{
+    display: inline-block;
+}
+.content .aside li .huanhang{
+    line-height: 25px;
 }
